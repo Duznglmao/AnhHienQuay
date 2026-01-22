@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="https://i.ibb.co/pjs5FzfR/Anhh-Hien.jpg">
+    <title>Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Potta One", system-ui;
+            font-size: 36px;
+            animation: Color 10s linear infinite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        @keyframes Color {
+            0% {
+                background-color: red;
+            }
+
+            14% {
+                background-color: orange;
+            }
+
+            28% {
+                background-color: yellow;
+            }
+
+            42% {
+                background-color: green;
+            }
+
+            56% {
+                background-color: blue;
+            }
+
+            70% {
+                background-color: indigo;
+            }
+
+            84% {
+                background-color: violet;
+            }
+
+            100% {
+                background-color: red;
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .HienSpin {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            animation: Spin 3s linear infinite;
+            border: 5px solid white;
+        }
+
+        @keyframes Spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .circle {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-10px, -20px);
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Nhạc Hiển miền tây</p>
+        <img src="https://i.ibb.co/pjs5FzfR/Anhh-Hien.jpg" alt="Hiển" class="HienSpin">
+
+        <div class="hellnah">
+            <audio controls src="/test4/ScreenRecording_01-13-2026_23-00-15_1.mp3" loop>
+                Trình duyệt không hỗ trợ audio.
+            </audio>
+        </div>
+    </div>
+
+    <div class="circle"></div>
+
+</body>
+
+</html>
